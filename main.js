@@ -1,6 +1,6 @@
 let swapButton = document.getElementById('swap');
 
-
+swapped.style.display = 'none'; // second section hidden
 
 document.addEventListener("DOMContentLoaded", function(event) {    
     function enterWords() { // loop that asks for 3 words
@@ -23,8 +23,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
         document.getElementById('third').innerText = wordsArray[2];
 
         swapButton.style.display = 'block'; // only visible when 3 words displayed
+        
     }
     enterWords();
 
-    swapButton.addEventListener("click", swapLetters, false); //define button event when clicked   
+    swapButton.addEventListener("click", swapLetters, false); //defined button event when clicked   
+    
+    function swapLetters () { // hides first section and shows second section
+        preSwap.style.display = "none";
+        swapped.style.display = "block";
+    }
 })
