@@ -3,3 +3,11 @@ body {
     font-family: Helvetica, sans-serif;
     font-size: 150%;
 }
+
+#preSwap {
+    color: blue;
+}
+
+#swapped {
+    color: green;
+}
