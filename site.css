@@ -4,10 +4,12 @@ body {
     font-size: 150%;
 }
 
-#preSwap {
+#preSwap, #wordsList {
     color: blue;
+    font-family: Helvetica, sans-serif;
 }
 
-#swapped {
+#swapped, #swappedWordsList {
     color: green;
+    font-family: 'Times New Roman', Times, serif;
 }
